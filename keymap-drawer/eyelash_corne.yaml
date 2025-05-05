@@ -101,10 +101,10 @@ layers:
   SYMBOL:
   - PgUp
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '&yahoomail'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
