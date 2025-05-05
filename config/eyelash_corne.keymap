@@ -110,10 +110,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PAGE_UP    &none      &yahoomail  &none      &none        &none                                   &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
-&trans         &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4    &kp KP_N5               &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
-&kp PAGE_DOWN  &none      &none       &none      &kp KP_PLUS  &kp KP_MINUS  &trans                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zerozero  &kp END
-                                      &kp DEL    &kp BSPC     &kp ENTER                                                                &trans           &trans        &trans
+&kp PAGE_UP    &none            &yahoomail  &none      &none        &none                                   &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
+&trans         &kp KP_NUMBER_1  &kp KP_N2   &kp KP_N3  &kp KP_N4    &kp KP_N5               &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
+&kp PAGE_DOWN  &none            &none       &none      &kp KP_PLUS  &kp KP_MINUS  &trans                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zerozero  &kp END
+                                            &kp DEL    &kp BSPC     &kp ENTER                                                                &trans           &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
