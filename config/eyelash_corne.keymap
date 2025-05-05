@@ -93,10 +93,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&mt LEFT_ALT UP_ARROW      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10         &kp F11
-&mt LCTRL LEFT_ARROW       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &mt RCTRL RIGHT_ARROW
-&mt LEFT_SHIFT DOWN_ARROW  &sys_reset    &trans        &bootloader   &trans        &mkp MB5      &kp C_MUTE                    &mmv MOVE_DOWN                   &trans        &trans        &bootloader   &sys_reset    &kp SCROLLLOCK  &kp F12
-                                                       &trans        &trans        &trans                                                                       &trans        &trans        &trans
+&mt LEFT_ALT UP_ARROW      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6         &kp F7        &kp F8                &kp F9                 &kp F10       &kp F11
+&mt LCTRL LEFT_ARROW       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0  &mt RCTRL RIGHT_ARROW
+&mt LEFT_SHIFT DOWN_ARROW  &kp EXCL      &kp DQT       &kp HASH      &kp DOLLAR    &kp PERCENT   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none         &kp F12
+                                                       &trans        &trans        &trans                                                                       &trans         &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
