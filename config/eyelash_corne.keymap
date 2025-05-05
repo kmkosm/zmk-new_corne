@@ -50,18 +50,32 @@
     };
 
     macros {
-        gmail: gmail {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp D &kp A &kp P &kp T &kp A &kp D &kp A &kp M &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "GMAIL";
-        };
-
         zerozero: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp NUMBER_0 &kp NUMBER_0>;
             label = "NEW_MACRO";
+        };
+
+        yahoomail: yahoomail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp M &kp K &kp O &kp S &kp M &kp AT &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp DOT &kp J &kp P>;
+            label = "YAHOOMAIL";
+        };
+
+        taskmanager: taskmanager {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(ESCAPE))>;
+            label = "TASKMANAGER";
+        };
+
+        scsho: scsho {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(S))>;
+            label = "SCSHO";
         };
     };
 
@@ -97,9 +111,9 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PAGE_UP    &gmail        &kp AT        &kp HASH   &kp DLLR     &kp PRCNT                               &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &none       &none      &kp HOME
-&trans         &kp KP_N1     &kp KP_N2     &kp KP_N3  &kp KP_N4    &kp KP_N5               &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_N0  &trans
-&kp PAGE_DOWN  &out OUT_USB  &out OUT_BLE  &none      &kp KP_PLUS  &kp KP_MINUS  &trans                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT  &zerozero  &kp END
+&kp PAGE_UP    &none         &kp AT        &kp HASH   &kp DLLR     &kp PRCNT                               &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
+&trans         &kp KP_N1     &kp KP_N2     &kp KP_N3  &kp KP_N4    &kp KP_N5               &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
+&kp PAGE_DOWN  &out OUT_USB  &out OUT_BLE  &none      &kp KP_PLUS  &kp KP_MINUS  &trans                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zerozero  &kp END
                                            &kp DEL    &kp BSPC     &kp ENTER                                                                &trans           &trans        &trans
             >;
 
