@@ -100,7 +100,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - PgUp
-  - '&gmail'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '@'
   - '#'
   - $
@@ -109,8 +109,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&taskmanager'
+  - '&scsho'
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
