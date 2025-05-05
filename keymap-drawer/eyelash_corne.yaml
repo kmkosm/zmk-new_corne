@@ -128,8 +128,8 @@ layers:
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
-  - OUT USB
-  - OUT BLE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP PLUS
   - KP MINUS
