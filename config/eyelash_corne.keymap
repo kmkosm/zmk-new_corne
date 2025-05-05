@@ -4,7 +4,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -71,8 +70,8 @@
             display-name = "NUMBER";
             bindings = <
 &trans  &none  &none      &none      &none     &none                                    &mmv MOVE_UP                     &none     &none     &none      &none      &none         &kp RIGHT_ALT
-&trans  &none  &kp BSLH   &kp CARET  &kp BSLH  &kp AT                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LBKT  &kp RBKT  &kp MINUS  &kp EQUAL  &kp ASTERISK  &kp RCTRL
-&trans  &none  &kp UNDER  &kp TILDE  &kp PIPE  &kp GRAVE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LBRC  &kp RBRC  &none      &none      &none         &trans
+&trans  &none  &kp BSLH   &kp CARET  &kp BSLH  &kp AT                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LBKT  &kp RBKT  &kp MINUS  &kp EQUAL  &kp COLON     &kp RCTRL
+&trans  &none  &kp UNDER  &kp TILDE  &kp PIPE  &kp GRAVE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LBRC  &kp RBRC  &none      &none      &kp ASTERISK  &trans
                           &trans     &trans    &trans                                                                    &kp INS   &kp DEL   &trans
             >;
 
@@ -82,10 +81,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp PAGE_UP    &kp EXCL      &kp AT        &kp HASH   &kp DLLR     &kp PRCNT                               &mmv MOVE_UP                     &kp CARET        &kp AMPS      &kp ASTRK  &kp LPAR    &kp RPAR   &kp HOME
+&trans         &kp KP_N1     &kp KP_N2     &kp KP_N3  &kp KP_N4    &kp KP_N5               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_N0  &trans
+&kp PAGE_DOWN  &out OUT_USB  &out OUT_BLE  &none      &kp KP_PLUS  &kp KP_MINUS  &trans                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT  &none      &kp END
+                                           &kp DEL    &kp BSPC     &kp ENTER                                                                &kp RET          &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
