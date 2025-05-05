@@ -95,12 +95,12 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - PgUp
-  - '!'
+  - '&gmail'
   - '@'
   - '#'
   - $
@@ -139,7 +139,7 @@ layers:
   - KP SLASH
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP DOT
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&zerozero'
   - END
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
