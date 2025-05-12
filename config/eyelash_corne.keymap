@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -76,6 +77,20 @@
             bindings = <&kp LG(LS(S))>;
             label = "SCSHO";
         };
+
+        zeze: zeze {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0>;
+            label = "ZEZE";
+        };
+
+        ctrlaltdelete: ctrlaltdelete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(DEL))>;
+            label = "CTRLALTDELETE";
+        };
     };
 
     keymap {
@@ -84,10 +99,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp LEFT_ALT    &kp Q  &kp W  &kp E      &kp R             &kp T                               &kp UP                &kp Y        &kp U           &kp I              &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC   &kp A  &kp S  &kp D      &kp F             &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J           &kp K              &kp L    &kp SEMI  &mt RCTRL K_APP
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V             &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M           &kp COMMA          &kp DOT  &kp FSLH  &kp RSHIFT
-                              &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                               &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_COMMAND
+&kp LEFT_ALT    &kp Q  &kp W  &kp E      &kp R             &kp T                            &kp UP                &kp Y        &kp U           &kp I              &kp O    &kp P     &kp BSPC
+&mt LCTRL ESC   &kp A  &kp S  &kp D      &kp F             &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J           &kp K              &kp L    &kp SEMI  &mt RCTRL K_APP
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V             &kp B        &tog 4              &kp DOWN              &kp N        &kp M           &kp COMMA          &kp DOT  &kp FSLH  &kp RSHIFT
+                              &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                            &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_COMMAND
             >;
 
             // sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -104,31 +119,40 @@
                                &trans     &trans           &trans                                                                               &trans             &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PAGE_UP    &none            &yahoomail  &none      &none        &none                                           &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
-&trans         &kp KP_NUMBER_1  &kp KP_N2   &kp KP_N3  &kp KP_N4    &kp KP_N5                       &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
-&kp PAGE_DOWN  &none            &none       &none      &kp KP_PLUS  &kp KP_MINUS  &kp KP_NUMLOCK                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zerozero  &kp END
-                                            &kp DEL    &kp BSPC     &kp ENTER                                                                        &trans           &trans        &trans
+&kp PAGE_UP    &yahoomail       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT                                    &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
+&trans         &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3       &kp KP_N4     &kp KP_N5                          &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
+&kp PAGE_DOWN  &none            &none           &none           &kp KP_PLUS   &kp KP_MINUS     &ctrlaltdelete                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zerozero  &kp END
+                                                &kp DEL         &kp BSPC      &kp ENTER                                                                           &trans           &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&mt LEFT_ALT UP_ARROW      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6        &kp F7         &kp F8        &kp F9                &kp F10       &kp F11
+&mt LEFT_ALT UP_ARROW      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                      &mmv MOVE_UP                     &kp F6        &kp F7         &kp F8        &kp F9                &kp F10       &mt RIGHT_ALT F11
 &mt LCTRL LEFT_ARROW       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0  &mt RCTRL RIGHT_ARROW
-&mt LEFT_SHIFT DOWN_ARROW  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LCTRL     &kp AMPERSAND  &kp ASTRK     &kp LEFT_PARENTHESIS  &zerozero     &kp F12
+&mt LEFT_SHIFT DOWN_ARROW  &kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LCTRL     &kp AMPERSAND  &kp ASTRK     &kp LEFT_PARENTHESIS  &zeze         &kp F12
                                                        &trans        &trans        &trans                                                                       &trans        &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans                    &trans          &trans  &trans  &kp KP_NUMLOCK  &kp SCROLLLOCK  &trans  &trans
+&trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans
+&trans  &bt BT_CLR    &trans        &trans        &trans        &trans  &tog 0            &trans          &trans  &trans  &trans          &trans          &trans  &trans
+                                    &trans        &trans        &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
