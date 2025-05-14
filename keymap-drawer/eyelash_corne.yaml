@@ -139,7 +139,7 @@ layers:
   - KP SLASH
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP DOT
-  - '&zerozero'
+  - '&zeze'
   - END
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -188,7 +188,7 @@ layers:
   - '&'
   - '*'
   - (
-  - '&zeze'
+  - '&zerozero'
   - F12
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
