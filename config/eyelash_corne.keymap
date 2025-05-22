@@ -91,6 +91,13 @@
             bindings = <&kp LA(LC(DEL))>;
             label = "CTRLALTDELETE";
         };
+
+        altf4: altf4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+            label = "ALTF4";
+        };
     };
 
     keymap {
@@ -125,10 +132,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PAGE_UP    &yahoomail       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT                                    &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
-&trans         &kp KP_NUMBER_1  &kp KP_N2       &kp KP_N3       &kp KP_N4     &kp KP_N5                          &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
-&kp PAGE_DOWN  &none            &none           &none           &kp KP_PLUS   &kp KP_MINUS     &ctrlaltdelete                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zeze      &kp END
-                                                &kp DEL         &kp BSPC      &kp ENTER                                                                           &trans           &trans        &trans
+&kp PAGE_UP    &yahoomail       &none      &none      &altf4       &none                                           &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
+&trans         &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp KP_N4    &kp KP_N5                       &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
+&kp PAGE_DOWN  &none            &none      &none      &kp KP_PLUS  &kp KP_MINUS  &ctrlaltdelete                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zeze      &kp END
+                                           &kp DEL    &kp BSPC     &kp ENTER                                                                        &trans           &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
