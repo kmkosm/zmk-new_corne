@@ -247,46 +247,46 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   '5':
   - {t: '$$mdi:transfer$$', type: trans}
+  - .
+  - '&ka_shift'
+  - '&ta_shift'
+  - '&ko_shift'
+  - '&sa_shift'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ra_shift'
+  - '&ti_shift'
+  - '&ku_shift'
+  - '&tu_shift'
+  - '&pi_shift'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&capslock_ly'
   - U
   - '&si_shift'
+  - '&te_shift'
+  - '&ke_shift'
+  - '&se_shift'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ha_shift'
+  - '&to_shift'
+  - '&ki_shift'
   - I
+  - '&nn_shift'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&hi_shift'
+  - '&su_shift'
+  - '&hu_shift'
+  - '&he_shift'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&me_shift'
+  - '&so_shift'
+  - '&ne_shift'
+  - '&ho_shift'
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - INT MUHENKAN
