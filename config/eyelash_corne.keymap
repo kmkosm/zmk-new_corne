@@ -126,6 +126,447 @@
             bindings = <&kp CAPS &to 0>;
             label = "CAPSLOCK_LY";
         };
+
+        ka_shift: ka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A>;
+            label = "KA_SHIFT";
+        };
+
+        ki_shift: ki_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I>;
+            label = "KI_SHIFT";
+        };
+
+        ku_shift: ku_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp U>;
+            label = "KU_SHIFT";
+        };
+
+        ke_shift: ke_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp E>;
+            label = "KE_SHIFT";
+        };
+
+        ko_shift: ko_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp O>;
+            label = "KO_SHIFT";
+        };
+
+        sa_shift: sa_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp A>;
+            label = "SA_SHIFT";
+        };
+
+        su_shift: su_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp U>;
+            label = "SU_SHIFT";
+        };
+
+        se_shift: se_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp E>;
+            label = "SE_SHIFT";
+        };
+
+        so_shift: so_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp O>;
+            label = "SO_SHIFT";
+        };
+
+        ta_shift: ta_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp A>;
+            label = "TA_SHIFT";
+        };
+
+        ti_shift: ti_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp I>;
+            label = "TI_SHIFT";
+        };
+
+        tu_shift: tu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp U>;
+            label = "TU";
+        };
+
+        te_shift: te_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E>;
+            label = "TE_SHIFT";
+        };
+
+        to_shift: to_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp O>;
+            label = "TO_SHIFT";
+        };
+
+        na_shift: na_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp A>;
+            label = "NA_SHIFT";
+        };
+
+        ni_shift: ni_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp I>;
+            label = "NI_SHIFT";
+        };
+
+        nu_shift: nu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp U>;
+            label = "NU_SHIFT";
+        };
+
+        ne_shift: ne_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp E>;
+            label = "NE_SHIFT";
+        };
+
+        no_shift: no_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp O>;
+            label = "NO_SHIFT";
+        };
+
+        ha_shift: ha_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A>;
+            label = "HA_SHIFT";
+        };
+
+        hi_shift: hi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp I>;
+            label = "HI_SHIFT";
+        };
+
+        hu_shift: hu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp U>;
+            label = "HU_SHIFT";
+        };
+
+        he_shift: he_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp E>;
+            label = "HE_SHIFT";
+        };
+
+        ho_shift: ho_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp O>;
+            label = "HO_SHIFT";
+        };
+
+        ma_shift: ma_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp A>;
+            label = "MA_SHIFT";
+        };
+
+        mi_shift: mi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp I>;
+            label = "MI_SHIFT";
+        };
+
+        mu_shift: mu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp U>;
+            label = "MU_SHIFT";
+        };
+
+        me_shift: me_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp E>;
+            label = "ME_SHIFT";
+        };
+
+        mo_shift: mo_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp O>;
+            label = "MO_SHIFT";
+        };
+
+        ya_shift: ya_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp A>;
+            label = "YA_SHIFT";
+        };
+
+        yu_shift: yu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U>;
+            label = "YU_SHIFT";
+        };
+
+        ra_shift: ra_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp A>;
+            label = "RA_SHIFT";
+        };
+
+        ri_shift: ri_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp I>;
+            label = "RI_SHIFT";
+        };
+
+        ru_shift: ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp U>;
+            label = "RU";
+        };
+
+        re_shift: re_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E>;
+            label = "RE_SHIFT";
+        };
+
+        ro_shift: ro_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp O>;
+            label = "RO_SHIFT";
+        };
+
+        wa_shift: wa_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A>;
+            label = "WA_SHIFT";
+        };
+
+        wo_shift: wo_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp O>;
+            label = "WO_SHIFT";
+        };
+
+        nn_shift: nn_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "NN_SHIFT";
+        };
+
+        xa_shift: xa_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp A>;
+            label = "XA_SHIFT";
+        };
+
+        xi_shift: xi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp I>;
+            label = "XI_SHIFT";
+        };
+
+        xu: xu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp U>;
+            label = "XU";
+        };
+
+        xe_shift: xe_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp E>;
+            label = "XE_SHIFT";
+        };
+
+        xo_shift: xo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp O>;
+            label = "XO";
+        };
+
+        xtu_shift: xtu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp T &kp U>;
+            label = "XTU_SHIFT";
+        };
+
+        xya_shift: xya_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp A>;
+            label = "XYA_SHIFT";
+        };
+
+        xyu_shift: xyu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp U>;
+            label = "XYU_SHIFT";
+        };
+
+        xyo: xyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp O>;
+            label = "XYO";
+        };
+
+        za_shift: za_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp A>;
+            label = "ZA_SHIFT";
+        };
+
+        zi_shift: zi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp I>;
+            label = "ZI";
+        };
+
+        zu_shift: zu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp U>;
+            label = "ZU_SHIFT";
+        };
+
+        ze_shift: ze_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp E>;
+            label = "ZE_SHIFT";
+        };
+
+        zo_shift: zo_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp O>;
+            label = "ZO_SHIFT";
+        };
+
+        da_shift: da_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp A>;
+            label = "DA_SHIFT";
+        };
+
+        di_shift: di_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp I>;
+            label = "DI_SHIFT";
+        };
+
+        du_shift: du_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp U>;
+            label = "DU_SHIFT";
+        };
+
+        de_shift: de_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp E>;
+            label = "DE_SHIFT";
+        };
+
+        do_shift: do_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp O>;
+            label = "DO_SHIFT";
+        };
+
+        ba_shift: ba_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp A>;
+            label = "BA_SHIFT";
+        };
+
+        bi_shift: bi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp I>;
+            label = "BI_SHIFT";
+        };
+
+        bu_shift: bu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp U>;
+            label = "BU_SHIFT";
+        };
+
+        be_shift: be_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp E>;
+            label = "BE_SHIFT";
+        };
+
+        bo_shift: bo_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp O>;
+            label = "BO_SHIFT";
+        };
     };
 
     combos {
@@ -206,10 +647,10 @@
 
         layer_5 {
             bindings = <
-&trans        &trans  &trans  &trans  &trans            &trans                    &trans          &trans  &trans          &trans  &trans  &trans  &trans
-&capslock_ly  &trans  &trans  &trans  &trans            &trans            &trans  &trans  &trans  &trans  &trans          &trans  &kp I   &trans  &trans
-&trans        &trans  &trans  &trans  &trans            &trans  &trans            &trans          &trans  &trans          &trans  &trans  &trans  &trans
-                              &trans  &kp INT_MUHENKAN  &trans                                    &trans  &kp INT_HENKAN  &trans
+&trans        &trans  &trans     &trans  &trans            &trans                    &trans          &trans  &trans          &trans  &trans     &trans  &trans
+&capslock_ly  &kp U   &si_shift  &trans  &trans            &trans            &trans  &trans  &trans  &trans  &trans          &trans  &kp I      &trans  &trans
+&trans        &trans  &trans     &trans  &trans            &trans  &trans            &trans          &trans  &trans          &trans  &kp SLASH  &trans  &trans
+                                 &trans  &kp INT_MUHENKAN  &trans                                    &trans  &kp INT_HENKAN  &trans
             >;
         };
     };
