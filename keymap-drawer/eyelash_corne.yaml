@@ -299,3 +299,71 @@ combos:
   k: A
 - p: [46, 25]
   k: '&yo_shift'
+- p: [43, 1]
+  k: '&xa_shift'
+- p: [2, 43]
+  k: E
+- p: [43, 3]
+  k: '&ri_shift'
+- p: [43, 4]
+  k: '&xya_shift'
+- p: [43, 5]
+  k: '&re_shift'
+- p: [7, 46]
+  k: '&yo_shift'
+- p: [43, 7]
+  k: '&ba_shift'
+- p: [46, 8]
+  k: '&ni_shift'
+- p: [46, 9]
+  k: '&ru_shift'
+- p: [46, 10]
+  k: '&ma_shift'
+- p: [46, 11]
+  k: '&xe_shift'
+- p: [43, 14]
+  k: '&wo_shift'
+- p: [43, 15]
+  k: A
+- p: [16, 43]
+  k: '&na_shift'
+- p: [17, 43]
+  k: '&xyu_shift'
+- p: [43, 18]
+  k: '&mo_shift'
+- p: [46, 22]
+  k: '&mi_shift'
+- p: [46, 23]
+  k: O
+- p: [46, 24]
+  k: '&no_shift'
+- p: [46, 25]
+  k: '&xyo'
+- p: [43, 25]
+  k: '&po_shift'
+- p: [46, 26]
+  k: '&xtu_shift'
+- p: [43, 29]
+  k: '&xu'
+- p: [43, 30]
+  k: {t: '-', s: _}
+- p: [43, 31]
+  k: '&ro_shift'
+- p: [43, 32]
+  k: '&ya_shift'
+- p: [43, 33]
+  k: '&xi_shift'
+- p: [46, 36]
+  k: '&nu_shift'
+- p: [43, 36]
+  k: '&pu_shift'
+- p: [46, 37]
+  k: '&yu_shift'
+- p: [46, 38]
+  k: '&mu_shift'
+- p: [43, 38]
+  k: '&pe_shift'
+- p: [46, 39]
+  k: '&wa_shift'
+- p: [46, 40]
+  k: '&xo_shift'
