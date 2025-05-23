@@ -27,6 +27,15 @@
 
 / {
     behaviors {
+        ctrl_caps_macro: ctrl_caps_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold CTRL / Tap MACRO";
+            #binding-cells = <0>;
+            flavor = "hold-preferred"; // または "balanced"
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&capslock_ly>;
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -858,7 +867,7 @@
         layer_5 {
             bindings = <
 &kp LEFT_ALT    &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &kp RIGHT_ALT
-&mt LCTRL capslock_ly    &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
+&ctrl_caps_macro    &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
 &kp LEFT_SHIFT  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
                                        &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
             >;
