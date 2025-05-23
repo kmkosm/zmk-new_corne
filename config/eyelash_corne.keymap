@@ -616,6 +616,176 @@
             bindings = <&yo_shift>;
             key-positions = <46 25>;
         };
+
+        xa {
+            bindings = <&xa_shift>;
+            key-positions = <43 1>;
+        };
+
+        e {
+            bindings = <&kp E>;
+            key-positions = <2 43>;
+        };
+
+        ri {
+            bindings = <&ri_shift>;
+            key-positions = <43 3>;
+        };
+
+        xya {
+            bindings = <&xya_shift>;
+            key-positions = <43 4>;
+        };
+
+        re {
+            bindings = <&re_shift>;
+            key-positions = <43 5>;
+        };
+
+        yo {
+            bindings = <&yo_shift>;
+            key-positions = <7 46>;
+        };
+
+        ba {
+            bindings = <&ba_shift>;
+            key-positions = <43 7>;
+        };
+
+        ni {
+            bindings = <&ni_shift>;
+            key-positions = <46 8>;
+        };
+
+        ru {
+            bindings = <&ru_shift>;
+            key-positions = <46 9>;
+        };
+
+        ma {
+            bindings = <&ma_shift>;
+            key-positions = <46 10>;
+        };
+
+        xe {
+            bindings = <&xe_shift>;
+            key-positions = <46 11>;
+        };
+
+        wo {
+            bindings = <&wo_shift>;
+            key-positions = <43 14>;
+        };
+
+        a {
+            bindings = <&kp A>;
+            key-positions = <43 15>;
+        };
+
+        na {
+            bindings = <&na_shift>;
+            key-positions = <16 43>;
+        };
+
+        xyu {
+            bindings = <&xyu_shift>;
+            key-positions = <17 43>;
+        };
+
+        mo {
+            bindings = <&mo_shift>;
+            key-positions = <43 18>;
+        };
+
+        mi {
+            bindings = <&mi_shift>;
+            key-positions = <46 22>;
+        };
+
+        o {
+            bindings = <&kp O>;
+            key-positions = <46 23>;
+        };
+
+        no {
+            bindings = <&no_shift>;
+            key-positions = <46 24>;
+        };
+
+        xyo {
+            bindings = <&xyo>;
+            key-positions = <46 25>;
+        };
+
+        po {
+            bindings = <&po_shift>;
+            key-positions = <43 25>;
+        };
+
+        xtu {
+            bindings = <&xtu_shift>;
+            key-positions = <46 26>;
+        };
+
+        xu {
+            bindings = <&xu>;
+            key-positions = <43 29>;
+        };
+
+        haifun {
+            bindings = <&kp MINUS>;
+            key-positions = <43 30>;
+        };
+
+        ro {
+            bindings = <&ro_shift>;
+            key-positions = <43 31>;
+        };
+
+        ya {
+            bindings = <&ya_shift>;
+            key-positions = <43 32>;
+        };
+
+        xi {
+            bindings = <&xi_shift>;
+            key-positions = <43 33>;
+        };
+
+        nu {
+            bindings = <&nu_shift>;
+            key-positions = <46 36>;
+        };
+
+        pu {
+            bindings = <&pu_shift>;
+            key-positions = <43 36>;
+        };
+
+        yu {
+            bindings = <&yu_shift>;
+            key-positions = <46 37>;
+        };
+
+        mu {
+            bindings = <&mu_shift>;
+            key-positions = <46 38>;
+        };
+
+        pe {
+            bindings = <&pe_shift>;
+            key-positions = <43 38>;
+        };
+
+        wa {
+            bindings = <&wa_shift>;
+            key-positions = <46 39>;
+        };
+
+        xo {
+            bindings = <&xo_shift>;
+            key-positions = <46 40>;
+        };
     };
 
     keymap {
