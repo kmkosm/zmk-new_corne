@@ -612,11 +612,6 @@
             key-positions = <43 15>;
         };
 
-        yo {
-            bindings = <&yo_shift>;
-            key-positions = <46 25>;
-        };
-
         xa {
             bindings = <&xa_shift>;
             key-positions = <43 1>;
@@ -786,6 +781,16 @@
             bindings = <&xo_shift>;
             key-positions = <46 40>;
         };
+
+        four {
+            bindings = <&kp LS(LEFT_BRACKET)>;
+            key-positions = <42 46 17>;
+        };
+
+        five {
+            bindings = <&kp RS(RIGHT_BRACKET)>;
+            key-positions = <42 46 18>;
+        };
     };
 
     keymap {
@@ -852,10 +857,10 @@
 
         layer_5 {
             bindings = <
-&trans        &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                    &trans          &ra_shift  &ti_shift       &ku_shift  &tu_shift  &pi_shift  &trans
-&capslock_ly  &kp U       &si_shift  &te_shift  &ke_shift         &se_shift            &trans  &trans  &trans  &ha_shift  &to_shift       &ki_shift  &kp I      &nn_shift  &trans
-&trans        &trans      &hi_shift  &su_shift  &hu_shift         &he_shift  &trans            &trans          &me_shift  &so_shift       &ne_shift  &ho_shift  &kp SLASH  &trans
-                                     &trans     &kp INT_MUHENKAN  &trans                                       &trans     &kp INT_HENKAN  &trans
+&kp LEFT_ALT    &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &kp RIGHT_ALT
+&capslock_ly    &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
+&kp LEFT_SHIFT  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
+                                       &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
             >;
         };
     };
