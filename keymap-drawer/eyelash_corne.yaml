@@ -246,7 +246,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '5':
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - .
   - '&ka_shift'
   - '&ta_shift'
@@ -258,7 +258,7 @@ layers:
   - '&ku_shift'
   - '&tu_shift'
   - '&pi_shift'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - '&capslock_ly'
   - U
   - '&si_shift'
@@ -273,8 +273,8 @@ layers:
   - '&ki_shift'
   - I
   - '&nn_shift'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&hi_shift'
   - '&su_shift'
@@ -287,18 +287,16 @@ layers:
   - '&ne_shift'
   - '&ho_shift'
   - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-tab$$', h: Fn}
   - INT MUHENKAN
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - INT HENKAN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RIGHT WIN
 combos:
 - p: [43, 15]
   k: A
-- p: [46, 25]
-  k: '&yo_shift'
 - p: [43, 1]
   k: '&xa_shift'
 - p: [2, 43]
@@ -367,3 +365,7 @@ combos:
   k: '&wa_shift'
 - p: [46, 40]
   k: '&xo_shift'
+- p: [42, 46, 17]
+  k: Sft+[
+- p: [42, 46, 18]
+  k: Sft+]
