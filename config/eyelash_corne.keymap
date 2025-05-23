@@ -567,6 +567,41 @@
             bindings = <&kp B &kp O>;
             label = "BO_SHIFT";
         };
+
+        pa_shift: pa_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp A>;
+            label = "PA_SHIFT";
+        };
+
+        pi_shift: pi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp I>;
+            label = "PI_SHIFT";
+        };
+
+        pu_shift: pu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp U>;
+            label = "PU_SHIFT";
+        };
+
+        pe_shift: pe_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp E>;
+            label = "PE_SHIFT";
+        };
+
+        po_shift: po_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp O>;
+            label = "PO_SHIFT";
+        };
     };
 
     combos {
@@ -647,10 +682,10 @@
 
         layer_5 {
             bindings = <
-&trans        &trans  &trans     &trans  &trans            &trans                    &trans          &trans  &trans          &trans  &trans     &trans  &trans
-&capslock_ly  &kp U   &si_shift  &trans  &trans            &trans            &trans  &trans  &trans  &trans  &trans          &trans  &kp I      &trans  &trans
-&trans        &trans  &trans     &trans  &trans            &trans  &trans            &trans          &trans  &trans          &trans  &kp SLASH  &trans  &trans
-                                 &trans  &kp INT_MUHENKAN  &trans                                    &trans  &kp INT_HENKAN  &trans
+&trans        &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                    &trans          &ra_shift  &ti_shift       &ku_shift  &tu_shift  &pi_shift  &trans
+&capslock_ly  &kp U       &si_shift  &te_shift  &ke_shift         &se_shift            &trans  &trans  &trans  &ha_shift  &to_shift       &ki_shift  &kp I      &nn_shift  &trans
+&trans        &trans      &hi_shift  &su_shift  &hu_shift         &he_shift  &trans            &trans          &me_shift  &so_shift       &ne_shift  &ho_shift  &kp SLASH  &trans
+                                     &trans     &kp INT_MUHENKAN  &trans                                       &trans     &kp INT_HENKAN  &trans
             >;
         };
     };
