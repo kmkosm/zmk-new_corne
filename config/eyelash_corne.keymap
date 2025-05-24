@@ -26,9 +26,6 @@
 };
 
 / {
-
-
-
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -115,12 +112,15 @@
         };
 
         /* Hold 側をまず「Ctrl 押下だけ」のマクロで定義 */
+
         ctrl_hold: ctrl_hold {
-            compatible     = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings       = <&kp LCTRL>;  /* ここだけ specifier を許す */
+            bindings = <&kp LCTRL>;  /* ここだけ specifier を許す */
         };
+
         /* 既存の capslock_ly マクロもここに置く */
+
         capslock_ly: capslock_ly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -605,7 +605,6 @@
         };
     };
 
-
     behaviors {
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -613,7 +612,6 @@
             #binding-cells = <0>;            // ← phandle + specifier の合計セル数
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
     };
 
     combos {
@@ -870,7 +868,7 @@
         layer_5 {
             bindings = <
 &kp LEFT_ALT    &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &kp RIGHT_ALT
-&kp LCTRL       &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
+&capslock_ly    &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
 &kp LEFT_SHIFT  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
                                        &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
             >;
