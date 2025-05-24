@@ -606,25 +606,26 @@
             #binding-cells = <0>;            // ← phandle + specifier の合計セル数
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-    ctrl_hold: ctrl_hold {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = < &kp LCTRL >;
-    };
 
-    caps_toggle: caps_toggle {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = < &kp CAPS &to 0 >;  // 例: Macros でレイヤー移動と CapsLock
-    };
+        /* まず Ctrl を送るだけのマクロを作る */
+        ctrl_hold: ctrl_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>;
+        };
 
-    ctrl_caps_layer0: ctrl_caps_layer0 {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;    // ここは 0
-        flavor         = "hold-preferred";
-        tapping-term-ms= <200>;
-        bindings       = < &ctrl_hold   &caps_toggle >;
-    };
+        /* 既に定義済みの capslock_ly が Tap 側 */
+        /* ... */
+
+        /* Hold-Tap 本体。specifier は取らない */
+        ctrl_caps_layer0: ctrl_caps_layer0 {
+            compatible        = "zmk,behavior-hold-tap";
+            #binding-cells    = <0>;       /* ← ここを 0 に */
+            flavor            = "hold-preferred";
+            tapping-term-ms   = <200>;
+            bindings          = <&ctrl_hold   &capslock_ly>;
+        };
+
     };
 
     combos {
