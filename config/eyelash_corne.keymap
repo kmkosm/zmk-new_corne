@@ -616,11 +616,11 @@
 
         ctrl_caps_layer0: ctrl_caps_layer0 {
             compatible      = "zmk,behavior-hold-tap";
-            #binding-cells  = <2>;            /* 必ず 2 に */
+            #binding-cells  = <1>;            
             flavor          = "hold-preferred";
             tapping-term-ms = <200>;
             /* phandle + specifier を 2 セルずつ並べる */
-            bindings        = <&ctrl_hold 0   &capslock_ly 0>;
+            bindings        = <&ctrl_hold  &capslock_ly>;
         };
     };
 
