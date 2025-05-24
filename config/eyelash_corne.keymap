@@ -26,23 +26,7 @@
 };
 
 / {
-    behaviors {
-        ctrl_caps_macro: ctrl_caps_macro {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold CTRL / Tap MACRO";
-            #binding-cells = <0>;
-            flavor = "hold-preferred"; // または "balanced"
-            tapping-term-ms = <200>;
-            bindings = <&kp LCTRL>, <&capslock_ly>;
-        };
 
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-    };
 
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -610,6 +594,24 @@
             #binding-cells = <0>;
             bindings = <&kp P &kp O>;
             label = "PO_SHIFT";
+        };
+    };
+
+    behaviors {
+        ctrl_caps_macro: ctrl_caps_macro {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold CTRL / Tap MACRO";
+            #binding-cells = <0>;
+            flavor = "hold-preferred"; // または "balanced"
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&capslock_ly>;
+        };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
     };
 
