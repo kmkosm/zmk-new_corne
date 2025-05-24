@@ -114,6 +114,13 @@
             label = "YO_SHIFT";
         };
 
+        /* Hold 側をまず「Ctrl 押下だけ」のマクロで定義 */
+        ctrl_hold: ctrl_hold {
+            compatible     = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings       = <&kp LCTRL>;  /* ここだけ specifier を許す */
+        };
+        /* 既存の capslock_ly マクロもここに置く */
         capslock_ly: capslock_ly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -607,23 +614,12 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        /* まず Ctrl を送るだけのマクロを作る */
-        ctrl_hold: ctrl_hold {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>;
-        };
-
-        /* 既に定義済みの capslock_ly が Tap 側 */
-        /* ... */
-
-        /* Hold-Tap 本体。specifier は取らない */
         ctrl_caps_layer0: ctrl_caps_layer0 {
-            compatible        = "zmk,behavior-hold-tap";
-            #binding-cells    = <0>;       /* ← ここを 0 に */
-            flavor            = "hold-preferred";
-            tapping-term-ms   = <200>;
-            bindings          = <&ctrl_hold   &capslock_ly>;
+            compatible      = "zmk,behavior-hold-tap";
+            #binding-cells  = <0>;            /* phandle のみ */
+            flavor          = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings        = <&ctrl_hold &capslock_ly>;
         };
 
     };
