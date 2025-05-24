@@ -597,6 +597,7 @@
         };
     };
 
+
     behaviors {
         ctrl_caps_macro: ctrl_caps_macro {
             compatible = "zmk,behavior-hold-tap";
