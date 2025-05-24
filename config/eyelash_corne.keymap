@@ -606,14 +606,14 @@
             #binding-cells = <0>;            // ← phandle + specifier の合計セル数
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-   //     ctrl_caps_layer0: ctrl_caps_layer0 {
-     //       compatible = "zmk,behavior-hold-tap";
-       //     label = "Hold Ctrl / Tap Caps+Layer0";
-         //   #binding-cells = <2>;
-          //  flavor = "hold-preferred";           // ホールド優先（タップと見なされにくい）
-         //   tapping-term-ms = <200>;             // タッピング判定の時間
-         //   bindings = <&kp LCTRL>, <&capslock_ly>;
-      //  };
+        ctrl_caps_layer0: ctrl_caps_layer0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Ctrl / Tap Caps+Layer0";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";           // ホールド優先（タップと見なされにくい）
+            tapping-term-ms = <200>;             // タッピング判定の時間
+            bindings = <&kp LCTRL &capslock_ly>;
+        };
     };
 
     combos {
