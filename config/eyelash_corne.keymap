@@ -603,6 +603,41 @@
             bindings = <&kp P &kp O>;
             label = "PO_SHIFT";
         };
+
+        ga_shift: ga_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp A>;
+            label = "GA_SHIFT";
+        };
+
+        gi_shift: gi_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I>;
+            label = "GI_SHIFT";
+        };
+
+        gu_shift: gu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp U>;
+            label = "GU_SHIFT";
+        };
+
+        ge_shift: ge_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp E>;
+            label = "GE_SHIFT";
+        };
+
+        go_shift: go_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp O>;
+            label = "GO_SHIFT";
+        };
     };
 
     behaviors {
@@ -650,11 +685,6 @@
         yo {
             bindings = <&yo_shift>;
             key-positions = <7 46>;
-        };
-
-        ba {
-            bindings = <&ba_shift>;
-            key-positions = <43 7>;
         };
 
         ni {
@@ -801,6 +831,106 @@
             bindings = <&kp RS(RIGHT_BRACKET)>;
             key-positions = <42 46 18>;
         };
+
+        ga {
+            bindings = <&ga_shift>;
+            key-positions = <46 2>;
+        };
+
+        gi {
+            bindings = <&gi_shift>;
+            key-positions = <24 43>;
+        };
+
+        gu {
+            bindings = <&gu_shift>;
+            key-positions = <46 9>;
+        };
+
+        ge {
+            bindings = <&ge_shift>;
+            key-positions = <46 17>;
+        };
+
+        go {
+            bindings = <&go_shift>;
+            key-positions = <46 4>;
+        };
+
+        za {
+            bindings = <&za_shift>;
+            key-positions = <46 5>;
+        };
+
+        zi {
+            bindings = <&zi_shift>;
+            key-positions = <46 15>;
+        };
+
+        zu {
+            bindings = <&zu_shift>;
+            key-positions = <46 31>;
+        };
+
+        ze {
+            bindings = <&ze_shift>;
+            key-positions = <18 46>;
+        };
+
+        zo {
+            bindings = <&zo_shift>;
+            key-positions = <37 43>;
+        };
+
+        da {
+            bindings = <&da_shift>;
+            key-positions = <3 46>;
+        };
+
+        di {
+            bindings = <&di_shift>;
+            key-positions = <8 43>;
+        };
+
+        du {
+            bindings = <&du_shift>;
+            key-positions = <43 10>;
+        };
+
+        de {
+            bindings = <&de_shift>;
+            key-positions = <16 46>;
+        };
+
+        do {
+            bindings = <&do_shift>;
+            key-positions = <23 43>;
+        };
+
+        ba {
+            bindings = <&bi_shift>;
+            key-positions = <22 43>;
+        };
+
+        bi {
+            bindings = <&bi_shift>;
+            key-positions = <30 46>;
+        };
+
+        bu {
+            bindings = <&bu_shift>;
+            key-positions = <32 46>;
+        };
+
+        be {
+            bindings = <&be_shift>;
+            key-positions = <33 46>;
+        };
+
+        bo {
+            bindings = <&bo_shift>;
+            key-positions = <39 43>;
+        };
     };
 
     keymap {
@@ -823,10 +953,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &none  &none           &none      &none            &none                                               &mmv MOVE_UP                     &mkp LCLK          &mkp MCLK  &mkp RCLK  &none      &none              &kp RIGHT_ALT
-&trans  &none  &kp INT_YEN     &kp EQUAL  &kp INT_RO       &kp LEFT_BRACKET                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp BSLH   &kp MINUS  &kp UNDER  &kp DOUBLE_QUOTES  &kp RCTRL
-&trans  &none  &kp LS(INT_RO)  &kp PLUS   &kp LS(INT_YEN)  &kp LS(LEFT_BRACKET)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE    &kp PIPE   &none      &none      &none              &trans
-                               &trans     &trans           &trans                                                                               &trans             &trans     &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none                                               &mmv MOVE_UP                     &mkp LCLK          &mkp MCLK  &mkp RCLK  &none      &none              &kp RIGHT_ALT
+&trans  &none           &kp INT_YEN     &kp EQUAL     &kp INT_RO       &kp LEFT_BRACKET                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp BSLH   &kp MINUS  &kp UNDER  &kp DOUBLE_QUOTES  &kp RCTRL
+&trans  &none           &kp LS(INT_RO)  &kp PLUS      &kp LS(INT_YEN)  &kp LS(LEFT_BRACKET)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE    &kp PIPE   &none      &none      &none              &trans
+                                        &trans        &trans           &trans                                                                               &trans             &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -835,7 +965,7 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp PAGE_UP    &yahoomail       &none      &none      &altf4       &none                                           &mmv MOVE_UP                     &mkp LCLK        &mkp MCLK     &mkp RCLK  &taskmanager  &scsho     &kp HOME
+&kp PAGE_UP    &yahoomail       &none      &none      &altf4       &none                                           &mmv MOVE_UP                     &none            &none         &none      &taskmanager  &scsho     &kp HOME
 &trans         &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp KP_N4    &kp KP_N5                       &mmv MOVE_LEFT  &mkp MCLK       &mmv MOVE_RIGHT  &kp KP_N6        &kp KP_N7     &kp KP_N8  &kp KP_N9     &kp KP_N0  &trans
 &kp PAGE_DOWN  &none            &none      &none      &kp KP_PLUS  &kp KP_MINUS  &ctrlaltdelete                    &mmv MOVE_DOWN                   &kp KP_ASTERISK  &kp KP_SLASH  &none      &kp KP_DOT    &zeze      &kp END
                                            &kp DEL    &kp BSPC     &kp ENTER                                                                        &trans           &trans        &trans
@@ -867,10 +997,10 @@
 
         layer_5 {
             bindings = <
-&kp LEFT_ALT    &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &kp RIGHT_ALT
-&capslock_ly    &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
-&kp LEFT_SHIFT  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
-                                       &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
+&kp LEFT_ALT           &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &mt RIGHT_ALT BACKSPACE
+&capslock_ly           &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
+&mt LEFT_SHIFT ESCAPE  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
+                                              &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
             >;
         };
     };
