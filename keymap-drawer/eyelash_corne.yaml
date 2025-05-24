@@ -259,7 +259,7 @@ layers:
   - '&tu_shift'
   - '&pi_shift'
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - '&capslock_ly'
   - U
   - '&si_shift'
   - '&te_shift'
