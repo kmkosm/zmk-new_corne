@@ -51,10 +51,10 @@ layers:
   - $$mdi:apple-keyboard-command$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -106,9 +106,9 @@ layers:
   - '&altf4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&taskmanager'
   - '&scsho'
   - HOME
@@ -258,7 +258,7 @@ layers:
   - '&ku_shift'
   - '&tu_shift'
   - '&pi_shift'
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   - '&capslock_ly'
   - U
   - '&si_shift'
@@ -274,7 +274,7 @@ layers:
   - I
   - '&nn_shift'
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&hi_shift'
   - '&su_shift'
@@ -309,8 +309,6 @@ combos:
   k: '&re_shift'
 - p: [7, 46]
   k: '&yo_shift'
-- p: [43, 7]
-  k: '&ba_shift'
 - p: [46, 8]
   k: '&ni_shift'
 - p: [46, 9]
@@ -369,3 +367,43 @@ combos:
   k: Sft+[
 - p: [42, 46, 18]
   k: Sft+]
+- p: [46, 2]
+  k: '&ga_shift'
+- p: [24, 43]
+  k: '&gi_shift'
+- p: [46, 9]
+  k: '&gu_shift'
+- p: [46, 17]
+  k: '&ge_shift'
+- p: [46, 4]
+  k: '&go_shift'
+- p: [46, 5]
+  k: '&za_shift'
+- p: [46, 15]
+  k: '&zi_shift'
+- p: [46, 31]
+  k: '&zu_shift'
+- p: [18, 46]
+  k: '&ze_shift'
+- p: [37, 43]
+  k: '&zo_shift'
+- p: [3, 46]
+  k: '&da_shift'
+- p: [8, 43]
+  k: '&di_shift'
+- p: [43, 10]
+  k: '&du_shift'
+- p: [16, 46]
+  k: '&de_shift'
+- p: [23, 43]
+  k: '&do_shift'
+- p: [22, 43]
+  k: '&bi_shift'
+- p: [30, 46]
+  k: '&bi_shift'
+- p: [32, 46]
+  k: '&bu_shift'
+- p: [33, 46]
+  k: '&be_shift'
+- p: [39, 43]
+  k: '&bo_shift'
