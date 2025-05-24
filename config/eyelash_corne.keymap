@@ -606,14 +606,25 @@
             #binding-cells = <0>;            // ← phandle + specifier の合計セル数
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-        ctrl_caps_layer0: ctrl_caps_layer0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold Ctrl / Tap Caps+Layer0";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";           // ホールド優先（タップと見なされにくい）
-            tapping-term-ms = <200>;             // タッピング判定の時間
-            bindings = <&kp LCTRL &capslock_ly>;
-        };
+    ctrl_hold: ctrl_hold {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = < &kp LCTRL >;
+    };
+
+    caps_toggle: caps_toggle {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = < &kp CAPS &to 0 >;  // 例: Macros でレイヤー移動と CapsLock
+    };
+
+    ctrl_caps_layer0: ctrl_caps_layer0 {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <0>;    // ここは 0
+        flavor         = "hold-preferred";
+        tapping-term-ms= <200>;
+        bindings       = < &ctrl_hold   &caps_toggle >;
+    };
     };
 
     combos {
