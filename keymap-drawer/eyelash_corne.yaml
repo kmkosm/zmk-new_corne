@@ -102,7 +102,7 @@ layers:
   - PgUp
   - '&yahoomail'
   - Gui+Sft+$$mdi:arrow-left-bold$$
-  - Gui+Sft+$$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-up-bold$$
   - '&altf4'
   - Sft+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -127,17 +127,17 @@ layers:
   - KP 9
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+PgDn
+  - PgDn
   - Ctl+PgUp
   - Ctl+PgDn
-  - Gui+Sft+$$mdi:arrow-down-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
   - KP PLUS
   - KP MINUS
   - '&ctrlaltdelete'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - KP ASTERISK
   - KP SLASH
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - KP COMMA
   - KP DOT
   - '&zeze'
   - END
