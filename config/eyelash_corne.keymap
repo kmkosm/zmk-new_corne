@@ -658,7 +658,7 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR";
-            bindings = <&tmp_ly_ctrl>, <&capslock_ly>;
+            bindings = <&tmp_ly_ctrl>, <&none>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
