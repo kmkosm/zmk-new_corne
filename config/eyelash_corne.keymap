@@ -638,6 +638,13 @@
             bindings = <&kp G &kp O>;
             label = "GO_SHIFT";
         };
+
+        caps_tmp_ly: caps_tmp_ly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &mo 0>;
+            label = "CAPS_TMP_LY";
+        };
     };
 
     behaviors {
@@ -646,6 +653,15 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;            // ← phandle + specifier の合計セル数
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&caps_tmp_ly>, <&capslock_ly>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -998,7 +1014,7 @@
         layer_5 {
             bindings = <
 &kp LEFT_ALT           &kp PERIOD  &ka_shift  &ta_shift  &ko_shift         &sa_shift                      &trans          &ra_shift    &ti_shift       &ku_shift      &tu_shift  &pi_shift  &mt RIGHT_ALT BACKSPACE
-&capslock_ly           &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
+&new_behavior 0 0      &kp U       &si_shift  &te_shift  &ke_shift         &se_shift              &trans  &trans  &trans  &ha_shift    &to_shift       &ki_shift      &kp I      &nn_shift  &kp RCTRL
 &mt LEFT_SHIFT ESCAPE  &trans      &hi_shift  &su_shift  &hu_shift         &he_shift    &trans            &trans          &me_shift    &so_shift       &ne_shift      &ho_shift  &kp SLASH  &kp RIGHT_SHIFT
                                               &lt 3 TAB  &kp INT_MUHENKAN  &lt 1 ENTER                                    &lt 2 SPACE  &kp INT_HENKAN  &kp RIGHT_WIN
             >;
