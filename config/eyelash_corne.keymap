@@ -639,7 +639,7 @@
             label = "GO_SHIFT";
         };
 
-        caps_tmp_ly: caps_tmp_ly {
+        tmp_ly_ctrl: caps_tmp_ly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mo 0 &kp LCTRL>;
@@ -658,7 +658,7 @@
         new_behavior: new_behavior {
             compatible = "zmk,behavior-hold-tap";
             label = "NEW_BEHAVIOR";
-            bindings = <&kp>, <&capslock_ly>;
+            bindings = <&tmp_ly_ctrl>, <&capslock_ly>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
