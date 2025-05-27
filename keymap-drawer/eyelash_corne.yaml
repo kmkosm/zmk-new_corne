@@ -259,7 +259,7 @@ layers:
   - '&tu_shift'
   - '&pi_shift'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
-  - '&capslock_ly'
+  - {t: '&capslock_ly', h: '&caps_tmp_ly'}
   - U
   - '&si_shift'
   - '&te_shift'
