@@ -642,7 +642,7 @@
         caps_tmp_ly: caps_tmp_ly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &mo 0>;
+            bindings = <&mo 0 &kp LCTRL>;
             label = "CAPS_TMP_LY";
         };
     };
