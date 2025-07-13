@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ':'
   - INT YEN
   - {t: '=', s: +}
   - INT RO
@@ -101,15 +101,15 @@ layers:
   SYMBOL:
   - PgUp
   - '&yahoomail'
-  - Gui+Sft+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-up-bold$$
   - '&altf4'
-  - Sft+Gui+$$mdi:arrow-right-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
+  - Alt+$$mdi:arrow-left-bold$$
   - '&taskmanager'
+  - AltGr+$$mdi:arrow-up-bold$$
+  - AltGr+$$mdi:arrow-right-bold$$
   - '&scsho'
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
