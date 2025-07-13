@@ -121,7 +121,7 @@
             display-name = "NUMBER";
             bindings = <
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none                                               &mmv MOVE_UP                     &mkp LCLK          &mkp MCLK  &mkp RCLK  &none      &none              &kp RIGHT_ALT
-&trans  &kp COLON       &kp INT_YEN     &kp EQUAL     &kp INT_RO       &kp LEFT_BRACKET                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp BSLH   &kp MINUS  &kp UNDER  &kp DOUBLE_QUOTES  &kp RCTRL
+&trans  &sk RO      &kp INT_YEN     &kp EQUAL     &kp INT_RO       &kp LEFT_BRACKET                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RIGHT_BRACKET  &kp BSLH   &kp MINUS  &kp UNDER  &kp DOUBLE_QUOTES  &kp RCTRL
 &trans  &none           &kp LS(INT_RO)  &kp PLUS      &kp LS(INT_YEN)  &kp LS(LEFT_BRACKET)  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_BRACE    &kp PIPE   &none      &none      &none              &trans
                                         &trans        &trans           &trans                                                                               &trans             &trans     &trans
             >;
